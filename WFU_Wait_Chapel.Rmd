@@ -1,0 +1,18 @@
+---
+title: "Wake Forest University Wait Chapel"
+author: "Martin"
+date: "March 11, 2017"
+output:
+  html_document:
+    fig_caption: yes
+  pdf_document: default
+---
+
+```{r, echo=TRUE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lat=36.1351991, lng=-80.2792641,
+    popup="Wake Forest University's Wait Chapel")
+my_map
+```
